@@ -1,0 +1,31 @@
+
+  <div class="content-box">
+    <div class="head">
+      <h2>添加排班</h2>
+      <span>带×的为必填项或者必选项</span>
+    </div>
+    <div class="content">
+      <ul class="box">
+
+        <li><span>选择班次</span><input   (click)="shift = !shift;unshift = false" type="text" placeholder="请选择班次"></li>
+        <div class="hidden" [hidden]="!shift">
+            <h2>添加班次</h2>
+            <p><span>班次名称</span><input type="text" placeholder="请输入"></p>
+            <p><span>班次起止时间</span><input type="text" placeholder="请输入"></p>
+            <button (click)="shift = !shift">确定</button>
+          </div>
+
+        <li><span>巡检员</span><input type="text" (click)="unshift = !unshift;shift=false" placeholder="请选择巡检员"></li>
+        <div class="hidden" [hidden]="!unshift">
+          <h2>巡检员</h2>
+          <p><span>巡检员</span><input type="text" placeholder="请输入"></p>
+          <p><span>班次起止时间</span><input type="text" placeholder="请输入"></p>
+          <button (click)="unshift = !unshift">确定</button>
+        </div>
+
+        <li><span>班次起止日期</span><input type="text" placeholder="请选择班次起止日期"></li>
+        <li><span>岗位</span><input type="text" placeholder="选择岗位"></li>
+      </ul>
+    </div>
+  </div>
+

@@ -1,0 +1,53 @@
+.content-box {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px #ccc;
+    border-radius: 10px;
+    
+}
+.content-box .head {
+    height: 40px;
+    border-bottom: 8px solid #CA9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.content-box .head h2 {
+    margin: 0;
+    font-weight: normal;
+}
+.content-box .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-box .content .box {
+    padding: 0;
+    list-style: none;
+}
+.content-box .content .box li {
+    margin: 30px 0px;
+    text-align: right;
+}
+.content-box .content .box input {
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    
+}
+.hidden {
+    position: relative;
+    border: 1px solid #000;
+    border-radius: 8px;
+    text-align: right;
+    padding: 20px;
+}
+.hidden h2{
+    position: relative;
+    left: 0;
+    top: 0;
+}

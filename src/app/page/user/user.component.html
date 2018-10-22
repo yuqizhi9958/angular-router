@@ -1,0 +1,13 @@
+<div class="user-box">
+  <ol class="user-ol">
+    <li><a [routerLink]="['./date']">排班</a></li>
+    <li><a routerLink="">用户</a></li>
+    <li><a [routerLink]="['./online']">修改密码</a></li>
+    <li><a [routerLink]="['./statistical']">统计</a></li>
+    <li><a routerLink="">优惠</a></li>
+    <li><a [routerLink]="['./details']">详情</a></li>
+  </ol>
+  <div class="my-box">
+    <router-outlet></router-outlet>
+  </div>
+</div>

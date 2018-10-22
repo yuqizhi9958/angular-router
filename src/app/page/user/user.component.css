@@ -1,0 +1,28 @@
+.user-box {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+}
+.user-ol {
+    flex-basis: 100px;
+    height: 300px;
+    list-style: none;
+    padding: 0;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,.87);
+}
+.user-ol li {
+    height: 50px;
+    text-align: center;
+    
+}
+.user-ol li a {
+    line-height: 50px;
+    color: aliceblue;
+    text-decoration-line: none;
+}
+.my-box {
+    height: 300px;
+    padding-left: 10px;
+    flex: 1;
+}
